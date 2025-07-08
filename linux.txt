@@ -1,0 +1,9 @@
+ls *list of dir folders*
+cd pathname *change directory folder*
+cd .. *move one level up folder dir*
+cp  *copy a file to another folder*
+mv  *move a file to another folder*
+mkdir *creates new dir folder*
+clear * clears CLI window*
+exit *exit*
+man command *Shows the manual for a given command.*

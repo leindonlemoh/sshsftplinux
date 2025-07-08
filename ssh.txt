@@ -1,0 +1,68 @@
+ssh user@example.com (ssh demo@test.rebex.net)
+
+
+cat `.ssh/id_rsa.pub  * checks public sshkey*
+-p - Specify the port
+-i - Use a private key file
+-v - Enable verbose mode
+-C - Enable compression
+-X - Enable X11 forwarding
+-o - Specify options directly on the command line
+
+DOWNLOAD
+scp demo@test.rebex.net:/pub/example/KeyGenerator.png ~/Downloads/
+
+
+
+C:\Users\leind>ssh demo@test.rebex.net
+Welcome to test.rebex.net! See https://test.rebex.net/ for more information.
+(demo@test.rebex.net) Password:
+For a list of supported commands, type 'help'.
+demo@test:/$ li
+-sh: Command 'li' not supported.
+demo@test:/$ ls
+pub
+readme.txt
+demo@test:/$ mv pub
+mv: missing operand
+demo@test:/$ cd pub
+demo@test:/pub$ ls
+example
+demo@test:/pub$ cd example
+demo@test:/pub/example$ ls
+imap-console-client.png
+KeyGenerator.png
+KeyGeneratorSmall.png
+mail-editor.png
+mail-send-winforms.png
+mime-explorer.png
+pocketftp.png
+pocketftpSmall.png
+pop3-browser.png
+pop3-console-client.png
+readme.txt
+ResumableTransfer.png
+winceclient.png
+winceclientSmall.png
+WinFormClient.png
+WinFormClientSmall.png
+demo@test:/pub/example$ pwd
+/pub/example
+demo@test:/pub/example$ scp demo@test.rebex.net:/KeyGenerator.png ~/Downloads/
+
+
+
+
+
+
+| **Action**                     | **SSH (Linux shell)**       | **SFTP**                                   | **Linux Commands (local PC)**               |
+| ------------------------------ | --------------------------- | ------------------------------------------ | ------------------------------------------- |
+| **1️⃣ Login**                  | `ssh user@host`             | `sftp user@host`                           | Open terminal locally                       |
+| **2️⃣ Show list of files**     | `ls -la`                    | `ls`                                       | `ls` (on local PC)                          |
+| **3️⃣ Show current directory** | `pwd`                       | `pwd` (shows remote path)                  | `pwd`                                       |
+| **4️⃣ Open a folder**          | `cd foldername`             | `cd foldername`                            | `cd foldername`                             |
+| **5️⃣ Create new folder**      | `mkdir new_folder`          | ❌ Not supported (SFTP cannot make folders) | `mkdir new_folder`                          |
+| **6️⃣ Delete folder**          | `rm -r foldername`          | ❌ Not supported                            | `rm -r foldername`                          |
+| **7️⃣ Download a file**        | ❌ Not directly (need `scp`) | `get file.txt`                             | `scp user@host:/path/file.txt ./Downloads/` |
+| **8️⃣ Show directory again**   | `ls -la`                    | `ls`                                       | `ls`                                        |
+| **9️⃣ Exit**                   | `exit`                      | `exit`                                     | `exit` or close terminal                    |
