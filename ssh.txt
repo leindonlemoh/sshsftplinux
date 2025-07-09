@@ -43,50 +43,32 @@ Test Goal: Basic file management skills
 
 Example tasks:
 
-Make a new directory:
+🔹Make a new directory:
 
-bash
-Copy
-Edit
 mkdir test_folder
 Copy a file:
 
-bash
-Copy
-Edit
 cp file1.txt file2.txt
+
 Move/rename a file:
+        mv file1.txt file_renamed.txt
 
-bash
-Copy
-Edit
-mv file1.txt file_renamed.txt
-Delete a file/folder:
+        Delete a file/folder:
+        rm file.txt
+        rm -r old_folder
 
-bash
-Copy
-Edit
-rm file.txt
-rm -r old_folder
+🔹Transfer files
+🔹Test Goal: Can you download/upload using SFTP?
 
-Transfer files
-Test Goal: Can you download/upload using SFTP?
+🔹Example tasks:
 
-Example tasks:
-
-Download a file to your local machine:
-
-bash
-Copy
-Edit
+        🔹Download a file to your local machine:
 sftp user@server.com
 get readme.txt
 exit
-Upload a file:
 
-bash
-Copy
-Edit
+
+🔹Upload a file:
 put myscript.sh
 
 
