@@ -7,3 +7,8 @@ mkdir *creates new dir folder*
 clear * clears CLI window*
 exit *exit*
 man command *Shows the manual for a given command.*
+
+🔹 Basic commands: ls, pwd, cd
+
+🔹 Download a file from server (if needed):
+scp user@host:/path/to/file ./Downloads/

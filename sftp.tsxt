@@ -1,1 +1,19 @@
 sftp demo@test.rebex.net
+
+🔹 Login to SFTP:
+sftp user@host
+
+🔹 List files and directories:
+ls
+
+🔹 Navigate folders:
+cd foldername
+
+🔹 Download files:
+get file.txt
+
+🔹 Upload files:
+put file.txt
+
+🔹 Exit SFTP:
+exit

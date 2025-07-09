@@ -14,45 +14,29 @@ scp demo@test.rebex.net:/pub/example/KeyGenerator.png ~/Downloads/
 
 
 
-C:\Users\leind>ssh demo@test.rebex.net
-Welcome to test.rebex.net! See https://test.rebex.net/ for more information.
-(demo@test.rebex.net) Password:
-For a list of supported commands, type 'help'.
-demo@test:/$ li
--sh: Command 'li' not supported.
-demo@test:/$ ls
-pub
-readme.txt
-demo@test:/$ mv pub
-mv: missing operand
-demo@test:/$ cd pub
-demo@test:/pub$ ls
-example
-demo@test:/pub$ cd example
-demo@test:/pub/example$ ls
-imap-console-client.png
-KeyGenerator.png
-KeyGeneratorSmall.png
-mail-editor.png
-mail-send-winforms.png
-mime-explorer.png
-pocketftp.png
-pocketftpSmall.png
-pop3-browser.png
-pop3-console-client.png
-readme.txt
-ResumableTransfer.png
-winceclient.png
-winceclientSmall.png
-WinFormClient.png
-WinFormClientSmall.png
-demo@test:/pub/example$ pwd
-/pub/example
-demo@test:/pub/example$ scp demo@test.rebex.net:/KeyGenerator.png ~/Downloads/
+🔹 Login to a remote server:
+ssh user@host
 
+🔹 Navigate directories:
+cd foldername, pwd
 
+🔹 List files:
+ls -la
 
+🔹 View text file (if supported):
+cat file.txt
 
+🔹 Create folder:
+mkdir myfolder
+
+🔹 Delete folder:
+rm -r myfolder
+
+🔹 Move or rename files:
+mv file1.txt file2.txt
+
+🔹 Exit shell:
+exit
 
 
 | **Action**                     | **SSH (Linux shell)**       | **SFTP**                                   | **Linux Commands (local PC)**               |
