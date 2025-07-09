@@ -38,6 +38,57 @@ mv file1.txt file2.txt
 🔹 Exit shell:
 exit
 
+Create, move, or delete files/folders
+Test Goal: Basic file management skills
+
+Example tasks:
+
+Make a new directory:
+
+bash
+Copy
+Edit
+mkdir test_folder
+Copy a file:
+
+bash
+Copy
+Edit
+cp file1.txt file2.txt
+Move/rename a file:
+
+bash
+Copy
+Edit
+mv file1.txt file_renamed.txt
+Delete a file/folder:
+
+bash
+Copy
+Edit
+rm file.txt
+rm -r old_folder
+
+Transfer files
+Test Goal: Can you download/upload using SFTP?
+
+Example tasks:
+
+Download a file to your local machine:
+
+bash
+Copy
+Edit
+sftp user@server.com
+get readme.txt
+exit
+Upload a file:
+
+bash
+Copy
+Edit
+put myscript.sh
+
 
 | **Action**                     | **SSH (Linux shell)**       | **SFTP**                                   | **Linux Commands (local PC)**               |
 | ------------------------------ | --------------------------- | ------------------------------------------ | ------------------------------------------- |
