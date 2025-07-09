@@ -1,7 +1,7 @@
 ssh user@example.com (ssh demo@test.rebex.net)
 
 
-cat `.ssh/id_rsa.pub  * checks public sshkey*
+cat ~/.ssh/id_rsa.pub * checks public sshkey*
 -p - Specify the port
 -i - Use a private key file
 -v - Enable verbose mode
